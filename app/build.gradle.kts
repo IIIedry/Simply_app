@@ -63,6 +63,9 @@ dependencies {
     kapt(libs.dagger.hilt.compiler)
     implementation(libs.dagger.main)
     implementation(libs.dagger.hilt.android)
+    implementation (libs.serialize.gson)
+    implementation(libs.retrofit)
+    implementation(libs.convert.gson)
 
 
     testImplementation(libs.junit)

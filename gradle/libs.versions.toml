@@ -10,6 +10,8 @@ activityCompose = "1.9.0"
 composeBom = "2024.05.00"
 dagger = "2.50"
 ksp = "1.9.22-1.0.17"
+gson = "2.10.1"
+retrofit2 = "2.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +32,9 @@ dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref =
 dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger" }
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
 dagger-main = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+serialize-gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit2" }
+convert-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit2" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
