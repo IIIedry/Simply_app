@@ -66,6 +66,8 @@ dependencies {
     implementation (libs.serialize.gson)
     implementation(libs.retrofit)
     implementation(libs.convert.gson)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
 
 
     testImplementation(libs.junit)

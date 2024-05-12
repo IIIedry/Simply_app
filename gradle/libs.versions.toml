@@ -12,6 +12,7 @@ dagger = "2.50"
 ksp = "1.9.22-1.0.17"
 gson = "2.10.1"
 retrofit2 = "2.9.0"
+room = "2.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +36,8 @@ dagger-main = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 serialize-gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit2" }
 convert-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit2" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
