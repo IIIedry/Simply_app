@@ -2,7 +2,6 @@ package com.example.weather_forecast
 
 import android.app.Application
 import com.example.weather_forecast.di.component.AppComponent
-import com.example.weather_forecast.di.component.DaggerAppComponent
 import com.example.weather_forecast.di.module.DatabaseModule
 
 class BaseApplication : Application() {

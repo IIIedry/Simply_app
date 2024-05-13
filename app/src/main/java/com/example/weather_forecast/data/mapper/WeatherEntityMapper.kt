@@ -8,7 +8,6 @@ import com.example.weather_forecast.domain.model.Weather
 import com.example.weather_forecast.domain.model.WeatherData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-
 object WeatherEntityMapper {
 
     fun mapWeatherEntityToWeatherData(weatherEntity: WeatherEntity): WeatherData {

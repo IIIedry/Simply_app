@@ -1,4 +1,4 @@
-package com.example.weather_forecast.utils
+package com.example.weather_forecast.util
 
 import android.Manifest
 import android.content.Context

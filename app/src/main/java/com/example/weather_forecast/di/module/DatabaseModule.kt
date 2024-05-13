@@ -1,6 +1,10 @@
 package com.example.weather_forecast.di.module
 
 import android.app.Application
+import androidx.room.Room
+import com.example.weather_forecast.data.local.AppDatabase
+import com.example.weather_forecast.data.local.LocalDataSource
+import com.example.weather_forecast.data.local.WeatherDao
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -15,7 +19,7 @@ class DatabaseModule(
         return Room.databaseBuilder(
             application,
             AppDatabase::class.java,
-            "Iliyas_database"
+            "mosam_database"
         ).build()
     }
 

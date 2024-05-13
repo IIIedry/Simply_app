@@ -6,7 +6,7 @@ import com.example.weather_forecast.domain.model.Weather
 import com.example.weather_forecast.domain.model.WeatherData
 import com.example.weather_forecast.domain.model.DailyForecast
 import com.example.weather_forecast.data.remote.DailyWeather
-import com.example.weather_forecast.utils.DrawableUtils
+import com.example.weather_forecast.util.DrawableUtils
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

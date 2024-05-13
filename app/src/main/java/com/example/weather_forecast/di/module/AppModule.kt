@@ -1,11 +1,16 @@
 package com.example.weather_forecast.di.module
 
+
+import com.example.weather_forecast.data.local.LocalDataSource
+import com.example.weather_forecast.data.remote.RemoteDataSource
+import com.example.weather_forecast.data.repository.WeatherDataRepositoryImpl
 import com.example.weather_forecast.domain.repository.WeatherDataRepository
 import com.example.weather_forecast.domain.usercase.GetWeatherDataUseCase
 import com.example.weather_forecast.domain.usercase.GetWeatherDataUseCaseImpl
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
+
 
 @Module
 class AppModule {

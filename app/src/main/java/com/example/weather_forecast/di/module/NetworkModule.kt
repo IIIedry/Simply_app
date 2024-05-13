@@ -1,14 +1,18 @@
 package com.example.weather_forecast.di.module
 
+import com.example.weather_forecast.data.remote.RemoteDataSource
+import com.example.weather_forecast.data.remote.WeatherService
 import dagger.Module
 import dagger.Provides
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
 class NetworkModule {
 
     companion object {
-        private const val BASE_URL = "https://api.openweathermap.org/data/3.0/"
+        private const val BASE_URL = "https://openweathermap.org/" //First
     }
 
     @Provides

@@ -3,6 +3,12 @@ package com.example.weather_forecast.domain.model
 import androidx.annotation.DrawableRes
 import com.example.weather_forecast.R
 
+data class WeatherData(
+    @DrawableRes val background: Int,
+    val current: Weather,
+    val forecasts: List<DailyForecast>
+)
+
 data class Weather(
     val sunrise: String,
     val sunset: String,
@@ -21,12 +27,6 @@ data class DailyForecast(
     val day: String,
     val temp: Double,
     @DrawableRes val icon: Int,
-)
-
-data class WeatherData(
-    @DrawableRes val background: Int,
-    val current: Weather,
-    val forecasts: List<DailyForecast>
 )
 
 object EmptyWeatherData {

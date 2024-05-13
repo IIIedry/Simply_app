@@ -1,4 +1,4 @@
-package com.example.weather_forecast.utils
+package com.example.weather_forecast.util
 
 import androidx.annotation.DrawableRes
 import com.example.weather_forecast.R

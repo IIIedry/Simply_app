@@ -1,5 +1,8 @@
 package com.example.weather_forecast.data.local
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 @Entity(tableName = "weather_data")
 data class WeatherEntity(
     @PrimaryKey val id: Int = 1,
