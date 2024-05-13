@@ -1,4 +1,4 @@
-package com.example.weather_forecast
+package com.example.weather_forecast.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.view.WindowCompat
 import com.example.weather_forecast.ui.theme.Weather_forecastTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,18 +31,24 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+override fun onPause() {
+    super.onPause()
+    NetworkUtils.stopNetworkCallback(applicationContext)
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Weather_forecastTheme {
-        Greeting("Android")
-    }
+override fun onDestroy() {
+    super.onDestroy()
+    NetworkUtils.stopNetworkCallback(applicationContext)
+}
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    WindowCompat.setDecorFitsSystemWindows(window, false)
+    installSplashScreen()
+    setContentView(activityMainBinding.root)
+    initDependencyInjection()
+    setupNetworkCallback()
+    setupTransitionGenerator()
+    observeBindWeatherData()
+    getWeatherData()
 }
