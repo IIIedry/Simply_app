@@ -68,6 +68,8 @@ dependencies {
     implementation(libs.convert.gson)
     implementation(libs.room.ktx)
     kapt(libs.room.compiler)
+    implementation(libs.androidx.appcompat)
+    implementation (libs.androidx.splashscreen)
 
 
     testImplementation(libs.junit)
