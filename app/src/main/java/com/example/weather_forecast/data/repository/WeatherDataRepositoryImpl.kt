@@ -5,6 +5,7 @@ import com.example.weather_forecast.data.local.LocalDataSource
 import com.example.weather_forecast.data.remote.RemoteDataSource
 import com.example.weather_forecast.domain.model.WeatherData
 import com.example.weather_forecast.domain.repository.WeatherDataRepository
+import com.example.weather_forecast.utils.NetworkUtils
 import javax.inject.Inject
 
 class WeatherDataRepositoryImpl @Inject constructor(

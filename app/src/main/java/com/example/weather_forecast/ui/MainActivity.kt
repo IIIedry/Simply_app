@@ -14,6 +14,8 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
 import com.flaviofaria.kenburnsview.RandomTransitionGenerator
 import com.example.weather_forecast.ui.theme.Weather_forecastTheme
+import com.example.weather_forecast.ui.viewmodel.WeatherViewModel
+import com.example.weather_forecast.ui.viewmodel.WeatherViewModelFactory
 import com.example.weather_forecast.utils.NetworkUtils
 import java.math.RoundingMode
 import java.text.DecimalFormat

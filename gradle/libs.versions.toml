@@ -15,6 +15,7 @@ retrofit2 = "2.9.0"
 room = "2.6.1"
 compat = "1.6.1"
 screen = "1.0.1"
+flaviofaria = "1.0.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,8 @@ room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "compat" }
 androidx-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "screen" }
+flaviofario-kenburnsview = { module = "com.flaviofaria:kenburnsview", version.ref = "flaviofaria" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

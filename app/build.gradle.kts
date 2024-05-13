@@ -70,6 +70,7 @@ dependencies {
     kapt(libs.room.compiler)
     implementation(libs.androidx.appcompat)
     implementation (libs.androidx.splashscreen)
+    implementation(libs.flaviofario.kenburnsview)
 
 
     testImplementation(libs.junit)

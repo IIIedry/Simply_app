@@ -2,6 +2,10 @@ package com.example.weather_forecast.data.mapper
 
 import androidx.annotation.DrawableRes
 import com.example.weather_forecast.R
+import com.example.weather_forecast.data.local.WeatherEntity
+import com.example.weather_forecast.domain.model.DailyForecast
+import com.example.weather_forecast.domain.model.Weather
+import com.example.weather_forecast.domain.model.WeatherData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
