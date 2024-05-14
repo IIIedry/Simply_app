@@ -19,7 +19,7 @@ class DatabaseModule(
         return Room.databaseBuilder(
             application,
             AppDatabase::class.java,
-            "mosam_database"
+            "database"
         ).build()
     }
 

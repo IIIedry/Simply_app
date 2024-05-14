@@ -1,10 +1,10 @@
 package com.example.weather_forecast.util
 
-import android.Manifest
 import android.content.Context
 import android.location.Location
 import android.location.LocationManager
 import androidx.annotation.RequiresPermission
+import android.Manifest
 
 object LocationUtils {
 
